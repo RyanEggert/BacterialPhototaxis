@@ -1,0 +1,11 @@
+FIJI Macros
+ 
+ (MIJI Reference: http://fiji.sc/Miji)
+
+
+Normalize Local Contrast:
+
+run("Normalize Local Contrast", "block_radius_x=40 block_radius_y=40 standard_deviations=3 center stretch stack");  % Yes stretch
+
+run("Normalize Local Contrast", "block_radius_x=40 block_radius_y=40 standard_deviations=3 center stack"); % No stretch
+
