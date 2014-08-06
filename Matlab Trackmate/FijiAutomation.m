@@ -2,7 +2,7 @@ Miji;   % Starts a FIJI inside MATLAB
 
 %% Select Images to Process %%
 
-[FileName,PathName,FilterIndex] = uigetfile(FilterSpec,DialogTitle, 'MultiSelect', 'on')
+[FileNames,PathNames,FilterIndex] = uigetfile(FilterSpec,'Select Image File(s) for Processing', 'MultiSelect', 'on')
 
 %% Open Image %%
 
@@ -25,3 +25,7 @@ Miji;   % Starts a FIJI inside MATLAB
 
 
 %% Save Tracking Results %%
+
+
+%% Exit Miji
+MIJ.exit()

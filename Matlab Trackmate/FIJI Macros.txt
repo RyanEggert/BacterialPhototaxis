@@ -2,6 +2,10 @@ FIJI Macros
  
  (MIJI Reference: http://fiji.sc/Miji)
 
+Set Memory:
+
+run("Memory & Threads...", "maximum=6039 parallel=8 run");
+
 
 Normalize Local Contrast:
 
@@ -9,3 +13,27 @@ run("Normalize Local Contrast", "block_radius_x=40 block_radius_y=40 standard_de
 
 run("Normalize Local Contrast", "block_radius_x=40 block_radius_y=40 standard_deviations=3 center stack"); % No stretch
 
+
+
+Image Properties:
+
+run("Properties...", "channels=1 slices=15 frames=1 unit=um pixel_width=1.0000 pixel_height=1.0000 voxel_depth=1.0000 frame=[.02 sec]");
+
+
+Despeckle for stretched local contrast normalization:
+
+run("Despeckle", "stack");
+
+
+Garbage Collection:
+
+__
+
+Select Window:
+
+__
+
+
+Close File:
+
+__
