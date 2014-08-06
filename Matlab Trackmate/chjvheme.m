@@ -2,7 +2,7 @@ function chjvheme(memoryallocationMB)
 % chjvheme  Changes Matlab's java heap memory which can be used for MIJI/
 % FIJI. This can be done to a limited extent in Matlab's preferences menu.
 %
-% migimemoryallocation(megabytes)
+% chjvheme(megabytes)
 %
 % This function requires specification of the amount of RAM (in megabytes)
 % to be allocated. 
