@@ -1,24 +1,31 @@
-Miji;   % Starts a FIJI inside MATLAB
+% Miji;   % Starts a FIJI inside MATLAB
 
 %% Select Images to Process %%
 
-[FileNames,PathNames,FilterIndex] = uigetfile(FilterSpec,'Select Image File(s) for Processing', 'MultiSelect', 'on')
-
-%% Open Image %%
-
-
-%% Local Contrast %%
+filterSpec = {'*.cxd;*.tif;*.png;*.jpg',...
+ 'Image Files (*.cxd,*.tif,*.png,*.jpg)';
+  '*.*',  'All Files (*.*)'};
+[fileNames,pathName,~] = uigetfile(filterSpec,'Select Image File(s) for Processing', 'MultiSelect', 'on');
 
 
-%% LUT Changes %%
+for i = 1:length(fileNames)    % For every image file selected...
+    imageLocation = strcat(pathName, fileNames(i));
+    %% Open Image %%
 
 
-%% Other Processing %%
+    %% Local Contrast %%
 
 
-%% Save LUT Changes %%
+    %% LUT Changes %%
 
 
+    %% Other Processing %%
+
+
+    %% Save LUT Changes %%
+
+
+end
 
 %% Tracking %%
 
@@ -28,4 +35,4 @@ Miji;   % Starts a FIJI inside MATLAB
 
 
 %% Exit Miji
-MIJ.exit()
+% MIJ.exit()

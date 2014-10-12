@@ -27,7 +27,7 @@ run("Despeckle", "stack");
 
 Garbage Collection:
 
-__
+run("Collect Garbage");
 
 Select Window:
 
@@ -37,3 +37,9 @@ __
 Close File:
 
 __
+
+Import first image of .cxd
+
+run("Image Sequence...", "open=F:\\July18201421.cxd number=1 sort");
+
+
