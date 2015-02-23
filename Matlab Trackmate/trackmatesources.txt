@@ -1,6 +1,5 @@
-
-
-
+TrackMate Resources
+-------------------
 
 TrackMate Algorithms -- http://fiji.sc/TrackMate_algorithms
 

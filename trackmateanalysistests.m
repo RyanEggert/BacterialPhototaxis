@@ -3,7 +3,7 @@
 clf
 
 % Import tracks and metadata from TrackMate XML file
-[tracks, md] = importTrackMateTracks('F:\July18201421_Tracks.xml', 'ClipZ');
+[tracks, md] = importTrackMateTracks('F:\MijiScripts\TestSeries\TestSeries_processed.xml', 'ClipZ');
 
 % Instantiate the MSD analyzer
 msda = msdanalyzer(2, md.spaceUnits, md.timeUnits); % 2-dimensions

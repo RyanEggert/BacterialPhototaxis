@@ -1,4 +1,7 @@
 function mijimemoryallocation(varargin)
+%%% ATTENTION. MATLAB's Java heap memory overrides this setting. Please use
+%%% changejavaheapmemory.m to change the memory avaliable for MIJI/FIJI.
+
 % MIJIMEMORYALLOCATION  Changes the maximum RAM allocated for MIJI/FIJI
 % migimemoryallocation(megabytes)
 %
@@ -12,6 +15,8 @@ function mijimemoryallocation(varargin)
 % computer's total avaliable RAM. 
 % * Guidelines for memory allocation: 
 % http://www.openmicroscopy.org/site/support/bio-formats5/users/imagej/managing-memory.html
+%
+
 
 % Check amount of computer RAM
 [~, systemMemory] = memory;
