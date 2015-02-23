@@ -1,3 +1,12 @@
+%% Change MATLAB Java Heap Memory %%
+% Running FIJI from within MATLAB uses MATLAB's allocated Java heap memory.
+% By default, this is set far too low for our uses. A slider in MATLAB's 
+% menu can change this value, but the menu limits the range of the slider.
+% We can set this value ourselves by manually editing a configuration file.
+% 
+% Change newMemory to your desired Java heap memory size and run this
+% script. It will perform some verifications, make the change, and shut
+% down MATLAB (necessary for the change to take effect).
 
 newMemory = 6000;   % Desired amount of Matlab Java heap memory in MB
 
