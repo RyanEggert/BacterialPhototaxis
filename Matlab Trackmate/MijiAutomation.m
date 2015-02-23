@@ -1,3 +1,8 @@
+%% Miji Automation %%
+% This is an old version of the code which has become lowdensimgprep.m.
+% This selects a file series via a dialog box and saves images as a series
+% of single-layer TIFFs. 
+
 Miji(false);   % Starts a FIJI inside MATLAB
 
 %% Select Images to Process %%
