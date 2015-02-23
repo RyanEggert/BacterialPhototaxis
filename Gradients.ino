@@ -1,4 +1,6 @@
 //Gradients.ino
+// An arduino sketch for producing a gradient of light across 
+// a horizontal array of 6 LEDs.
 
 int gradient[] = {100, 80, 60, 40, 20};
 // int gradient[] = {100, 90, 50, 10 , 5 };

@@ -1,10 +1,11 @@
+%% Import TrackMate Data + MSD analysis %%
+
 clf
 
-
+% Import tracks and metadata from TrackMate XML file
 [tracks, md] = importTrackMateTracks('F:\July18201421_Tracks.xml', 'ClipZ');
 
 % Instantiate the MSD analyzer
-
 msda = msdanalyzer(2, md.spaceUnits, md.timeUnits); % 2-dimensions
 
 msda = msda.addAll(tracks);
@@ -17,3 +18,5 @@ msda.labelPlotTracks() % This automatically labels the graph axes
 msda = msda.computeMSD();
 
 msda.msd()
+
+% For more, see http://tinevez.github.io/msdanalyzer/
