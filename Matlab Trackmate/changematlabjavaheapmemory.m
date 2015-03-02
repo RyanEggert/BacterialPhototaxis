@@ -8,7 +8,7 @@
 % script. It will perform some verifications, make the change, and shut
 % down MATLAB (necessary for the change to take effect).
 
-newMemory = 6000;   % Desired amount of Matlab Java heap memory in MB
+newMemory = 18000;   % Desired amount of Matlab Java heap memory in MB
 
 % Confirm operation
 confirmationDialog = strcat('This script will attempt to set Matlab''s',...

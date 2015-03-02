@@ -219,3 +219,10 @@ pip-log.txt
 #############
 
 *.asv
+
+
+#############
+## Test photo folder
+#############
+
+*/TestImages/*

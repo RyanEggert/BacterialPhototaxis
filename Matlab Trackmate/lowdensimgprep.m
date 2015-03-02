@@ -4,7 +4,9 @@ function lowdensimgprep(filebase)
 % in a "filebase". Images to be processed are stored as individual (i.e.
 % single-layer) .tiff files at "filebase-n", where n is a four digit number
 % ranging from 0001 to 1000 [We assume we process our normal 1000 frame
-% series].
+% series]. A filebase should be an absolute path. Use of a relative path
+% will cause FIJI/ImageJ to throw an error and be unable to find and open
+% the images.
 
 Miji(false);   % Starts a FIJI inside MATLAB
 filebase = strrep(filebase, '\', '\\'); % Format filepath
@@ -31,7 +33,7 @@ for i = 1:1000  % 1000 frame series.
     %% LUT Changes %%
     % Apply a LUT (identified by name). Note that this LUT file must be
     % placed in the /LUTS directory of the FIJI installation.
-    MIJ.run('TESTLUT1'); % Apply the given LUT.
+    MIJ.run('GOODLUT-1'); % Apply the given LUT.
     %% Other Processing %%
     % Convert the image to a RGB color image to save LUT color adjustments.
     % Convert back to an 8-bit image for further processing and use.
